@@ -1,0 +1,391 @@
+======================================================================
+  BLUESTOCK FINTECH CAPSTONE — DAY 1 DATA QUALITY REPORT
+  Generated : 2026-06-02 11:26:40 UTC
+  Python    : 3.13.13
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 01_fund_master.csv
+  PURPOSE : Scheme master — AMC, category, benchmark, expense ratio
+──────────────────────────────────────────────────────────────────────
+  Shape           : 40 rows × 15 columns
+  Data Types      :
+amfi_code                      int64
+fund_house                    object
+scheme_name                   object
+category                      object
+sub_category                  object
+plan                          object
+launch_date           datetime64[ns]
+benchmark                     object
+expense_ratio_pct            float64
+exit_load_pct                float64
+min_sip_amount                 int64
+min_lumpsum_amount             int64
+fund_manager                  object
+risk_category                 object
+sebi_category_code            object
+  Date Range      : launch_date: 1996-09-11 → 2015-12-28
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Unique 'amfi_code' : 40
+  Numeric Summary :
+         amfi_code  expense_ratio_pct  exit_load_pct  min_sip_amount  min_lumpsum_amount
+count      40.0000            40.0000        40.0000            40.0              40.000
+mean   120247.0000             1.2370         0.8125           500.0            1277.500
+std     14534.9987             0.3866         0.3871             0.0            1082.847
+min    100016.0000             0.5500         0.0000           500.0             100.000
+25%    118632.7500             0.7875         1.0000           500.0            1000.000
+50%    119551.5000             1.4250         1.0000           500.0            1000.000
+75%    120842.2500             1.5400         1.0000           500.0            1000.000
+max    149324.0000             1.6400         1.0000           500.0            5000.000
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 02_nav_history.csv
+  PURPOSE : Daily NAV time-series per scheme (2022–present)
+──────────────────────────────────────────────────────────────────────
+  Shape           : 46,000 rows × 3 columns
+  Data Types      :
+amfi_code             int64
+date         datetime64[ns]
+nav                 float64
+  Date Range      : date: 2022-01-03 → 2026-05-29
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Unique 'amfi_code' : 40
+  Numeric Summary :
+         amfi_code         nav
+count   46000.0000  46000.0000
+mean   120247.0000    269.5703
+std     14352.3172    577.1871
+min    100016.0000     26.1366
+25%    118632.7500     69.1704
+50%    119551.5000    122.7322
+75%    120842.2500    260.3387
+max    149324.0000   4268.5497
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 03_aum_by_fund_house.csv
+  PURPOSE : Bi-annual AUM per AMC (₹ Crore)
+──────────────────────────────────────────────────────────────────────
+  Shape           : 90 rows × 5 columns
+  Data Types      :
+date              datetime64[ns]
+fund_house                object
+aum_lakh_crore           float64
+aum_crore                  int64
+num_schemes                int64
+  Date Range      : date: 2022-03-31 → 2025-12-31
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Numeric Summary :
+       aum_lakh_crore     aum_crore  num_schemes
+count         90.0000  9.000000e+01      90.0000
+mean           4.3529  4.352889e+05     152.2000
+std            2.7343  2.734328e+05      52.1088
+min            1.0500  1.050000e+05      56.0000
+25%            2.5250  2.525000e+05      95.0000
+50%            3.4500  3.450000e+05     172.5000
+75%            5.6750  5.675000e+05     195.0000
+max           12.5000  1.250000e+06     216.0000
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 04_monthly_sip_inflows.csv
+  PURPOSE : Industry-level monthly SIP statistics
+──────────────────────────────────────────────────────────────────────
+  Shape           : 48 rows × 6 columns
+  Data Types      :
+month                        datetime64[ns]
+sip_inflow_crore                      int64
+active_sip_accounts_crore           float64
+new_sip_accounts_lakh               float64
+sip_aum_lakh_crore                  float64
+yoy_growth_pct                      float64
+  Date Range      : month: 2022-01-01 → 2025-12-01
+  Missing Values  : yoy_growth_pct=12(25.0%)
+  Null %          : 4.17%
+  Duplicate Rows  : 0
+  Numeric Summary :
+       sip_inflow_crore  active_sip_accounts_crore  new_sip_accounts_lakh  sip_aum_lakh_crore  yoy_growth_pct
+count           48.0000                    48.0000                48.0000             48.0000         36.0000
+mean         19577.5208                     7.1896                 9.8937              8.6321         31.4569
+std           6354.3296                     1.2715                 5.3707              3.6136         11.7682
+min          11438.0000                     4.9100                 7.5000              4.8000         15.8000
+25%          13658.5000                     6.1100                 8.7750              5.7900         20.2450
+50%          18224.0000                     7.1500                 9.2000              7.2650         28.2950
+75%          25944.2500                     8.3000                 9.5625             10.5250         40.8075
+max          31002.0000                     9.3500                46.0000             15.9000         53.0500
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 05_category_inflows.csv
+  PURPOSE : Monthly net inflows by equity/debt category
+──────────────────────────────────────────────────────────────────────
+  Shape           : 144 rows × 3 columns
+  Data Types      :
+month               datetime64[ns]
+category                    object
+net_inflow_crore           float64
+  Date Range      : month: 2024-04-01 → 2025-03-01
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Numeric Summary :
+       net_inflow_crore
+count          144.0000
+mean          6473.8819
+std           9718.3359
+min            437.0000
+25%           1801.2500
+50%           4148.0000
+75%           5304.0000
+max          41952.0000
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 06_industry_folio_count.csv
+  PURPOSE : Quarterly folio counts by investor type
+──────────────────────────────────────────────────────────────────────
+  Shape           : 21 rows × 6 columns
+  Data Types      :
+month                  datetime64[ns]
+total_folios_crore            float64
+equity_folios_crore           float64
+debt_folios_crore             float64
+hybrid_folios_crore           float64
+others_folios_crore           float64
+  Date Range      : month: 2022-01-01 → 2025-12-01
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Numeric Summary :
+       total_folios_crore  equity_folios_crore  debt_folios_crore  hybrid_folios_crore  others_folios_crore
+count             21.0000              21.0000            21.0000              21.0000              21.0000
+mean              19.8295              13.8805             2.7762               1.1900               1.9833
+std                4.5834               3.2078             0.6403               0.2749               0.4591
+min               13.2600               9.2800             1.8600               0.8000               1.3300
+25%               15.5400              10.8800             2.1800               0.9300               1.5500
+50%               19.9800              13.9900             2.8000               1.2000               2.0000
+75%               23.8900              16.7200             3.3400               1.4300               2.3900
+max               26.1200              18.2800             3.6600               1.5700               2.6100
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 07_scheme_performance.csv
+  PURPOSE : Risk-return metrics per scheme
+──────────────────────────────────────────────────────────────────────
+  Shape           : 40 rows × 19 columns
+  Data Types      :
+amfi_code               int64
+scheme_name            object
+fund_house             object
+category               object
+plan                   object
+return_1yr_pct        float64
+return_3yr_pct        float64
+return_5yr_pct        float64
+benchmark_3yr_pct     float64
+alpha                 float64
+beta                  float64
+sharpe_ratio          float64
+sortino_ratio         float64
+std_dev_ann_pct       float64
+max_drawdown_pct      float64
+aum_crore               int64
+expense_ratio_pct     float64
+morningstar_rating      int64
+risk_grade             object
+  Date Range      : N/A
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Unique 'amfi_code' : 40
+  Numeric Summary :
+         amfi_code  return_1yr_pct  return_3yr_pct  return_5yr_pct  benchmark_3yr_pct    alpha     beta  sharpe_ratio  sortino_ratio  std_dev_ann_pct  max_drawdown_pct   aum_crore  expense_ratio_pct  morningstar_rating
+count      40.0000         40.0000         40.0000         40.0000            40.0000  40.0000  40.0000       40.0000        40.0000          40.0000           40.0000     40.0000            40.0000             40.0000
+mean   120247.0000         14.3760         14.0890         14.5167            12.8355   1.2535   0.8733        1.3618         2.0825          14.9625          -19.2002  26091.6000             1.2370              4.2500
+std     14534.9987          4.8830          4.6173          4.4540             4.7410   0.4474   0.2248        1.4758         2.2031           6.6693            8.8192  13809.1113             0.3866              0.7425
+min    100016.0000          4.2600          5.1400          5.4300             3.9600   0.5100   0.2200        0.8000         1.0300           0.5000          -33.5000    979.0000             0.5500              3.0000
+25%    118632.7500         11.7350         12.0350         12.3400            10.6900   0.8875   0.8900        0.8650         1.2700          14.0000          -25.0625  17400.5000             0.7875              4.0000
+50%    119551.5000         14.6200         14.2050         14.1850            13.0900   1.2050   0.9600        0.9250         1.4450          14.0000          -20.6000  26713.0000             1.4250              4.0000
+75%    120842.2500         16.3925         15.8825         17.5850            14.7750   1.7000   1.0000        0.9850         1.6375          19.0000          -14.2550  38125.0000             1.5400              5.0000
+max    149324.0000         24.9300         23.3900         23.8000            22.1600   1.9800   1.0400        7.6800        10.3700          25.0000           -2.2300  49046.0000             1.6400              5.0000
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 08_investor_transactions.csv
+  PURPOSE : Individual investor transaction ledger
+──────────────────────────────────────────────────────────────────────
+  Shape           : 32,778 rows × 13 columns
+  Data Types      :
+investor_id                   object
+transaction_date      datetime64[ns]
+amfi_code                      int64
+transaction_type              object
+amount_inr                     int64
+state                         object
+city                          object
+city_tier                     object
+age_group                     object
+gender                        object
+annual_income_lakh           float64
+payment_mode                  object
+kyc_status                    object
+  Date Range      : transaction_date: 2024-01-01 → 2025-05-30
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Unique 'investor_id' : 5000
+  Numeric Summary :
+         amfi_code   amount_inr  annual_income_lakh
+count   32778.0000   32778.0000          32778.0000
+mean   120264.6175  107437.3186             26.1812
+std     14370.2053  150415.9051             20.8054
+min    100016.0000     400.0000              3.0000
+25%    118632.0000    3153.0000             10.6000
+50%    119551.0000   17782.5000             19.7000
+75%    120843.0000  189324.2500             37.4000
+max    149324.0000  597498.0000             99.7000
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 09_portfolio_holdings.csv
+  PURPOSE : Equity holdings per scheme
+──────────────────────────────────────────────────────────────────────
+  Shape           : 322 rows × 8 columns
+  Data Types      :
+amfi_code                     int64
+stock_symbol                 object
+stock_name                   object
+sector                       object
+weight_pct                  float64
+market_value_cr             float64
+current_price_inr           float64
+portfolio_date       datetime64[ns]
+  Date Range      : portfolio_date: 2025-12-31 → 2025-12-31
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Unique 'amfi_code' : 34
+  Numeric Summary :
+         amfi_code  weight_pct  market_value_cr  current_price_inr
+count     322.0000    322.0000         322.0000           322.0000
+mean   121210.4348     10.5590        1008.8466          4080.8705
+std     14669.3779      6.0601         543.8275          2265.1864
+min    100016.0000      0.9900          55.7400           246.7800
+25%    118633.0000      6.0150         513.7025          2081.9850
+50%    119552.0000      9.3950        1045.6700          4138.9950
+75%    120842.7500     13.9175        1477.5025          5914.3075
+max    149324.0000     38.1800        1999.5000          7942.9600
+
+──────────────────────────────────────────────────────────────────────
+  FILE    : 10_benchmark_indices.csv
+  PURPOSE : NIFTY 50 daily close values
+──────────────────────────────────────────────────────────────────────
+  Shape           : 8,050 rows × 3 columns
+  Data Types      :
+date           datetime64[ns]
+index_name             object
+close_value           float64
+  Date Range      : date: 2022-01-03 → 2026-05-29
+  Missing Values  : None
+  Null %          : 0.00%
+  Duplicate Rows  : 0
+  Numeric Summary :
+       close_value
+count    8050.0000
+mean    18351.9502
+std     14169.9951
+min      1444.1300
+25%      2819.0625
+50%     18392.9600
+75%     26539.0975
+max     79075.3900
+
+══════════════════════════════════════════════════════════════════════
+  AMFI CODE CROSS-VALIDATION
+══════════════════════════════════════════════════════════════════════
+  Fund Master Codes : 40
+  NAV History Codes : 40
+  Missing in NAV    : 0
+  Extra in NAV      : 0
+  ✅  AMFI Validation PASSED — perfect 1:1 match
+
+══════════════════════════════════════════════════════════════════════
+  LIVE NAV FETCH STATUS
+══════════════════════════════════════════════════════════════════════
+  File            : live_nav.csv
+  Records fetched : 18
+  Schemes tracked : 6
+  Latest fetch    : 2026-06-02T11:03:41.845579+00:00
+  NAV snapshot    :
+                                                          scheme_name       nav   nav_date
+                            SBI Small Cap Fund - Direct Plan - Growth  192.3195 01-06-2026
+       Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - IDCW  104.7025 01-06-2026
+               Axis ELSS Tax Saver Fund - Direct Plan - Growth Option  103.0948 01-06-2026
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option   97.1944 01-06-2026
+                 HDFC Money Market Fund - Growth Option - Direct Plan 6156.7532 01-06-2026
+                     quant Mid Cap Fund - Growth Option - Direct Plan  246.9814 01-06-2026
+                            SBI Small Cap Fund - Direct Plan - Growth  192.3195 01-06-2026
+       Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - IDCW  104.7025 01-06-2026
+               Axis ELSS Tax Saver Fund - Direct Plan - Growth Option  103.0948 01-06-2026
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option   97.1944 01-06-2026
+                 HDFC Money Market Fund - Growth Option - Direct Plan 6156.7532 01-06-2026
+                     quant Mid Cap Fund - Growth Option - Direct Plan  246.9814 01-06-2026
+                            SBI Small Cap Fund - Direct Plan - Growth  192.3195 01-06-2026
+       Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - IDCW  104.7025 01-06-2026
+               Axis ELSS Tax Saver Fund - Direct Plan - Growth Option  103.0948 01-06-2026
+Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option   97.1944 01-06-2026
+                 HDFC Money Market Fund - Growth Option - Direct Plan 6156.7532 01-06-2026
+                     quant Mid Cap Fund - Growth Option - Direct Plan  246.9814 01-06-2026
+
+══════════════════════════════════════════════════════════════════════
+  INGESTION SUMMARY
+══════════════════════════════════════════════════════════════════════
+
+                        file status  rows  cols  missing_cells  duplicates                                date_range
+          01_fund_master.csv     OK    40    15              0           0      launch_date: 1996-09-11 → 2015-12-28
+          02_nav_history.csv     OK 46000     3              0           0             date: 2022-01-03 → 2026-05-29
+    03_aum_by_fund_house.csv     OK    90     5              0           0             date: 2022-03-31 → 2025-12-31
+  04_monthly_sip_inflows.csv   WARN    48     6             12           0            month: 2022-01-01 → 2025-12-01
+     05_category_inflows.csv     OK   144     3              0           0            month: 2024-04-01 → 2025-03-01
+ 06_industry_folio_count.csv     OK    21     6              0           0            month: 2022-01-01 → 2025-12-01
+   07_scheme_performance.csv     OK    40    19              0           0                                       N/A
+08_investor_transactions.csv     OK 32778    13              0           0 transaction_date: 2024-01-01 → 2025-05-30
+   09_portfolio_holdings.csv     OK   322     8              0           0   portfolio_date: 2025-12-31 → 2025-12-31
+    10_benchmark_indices.csv     OK  8050     3              0           0             date: 2022-01-03 → 2026-05-29
+
+  Total datasets  : 10
+  Total rows      : 87,533
+  Total cells     : 593,496
+  Status — OK     : 9  |  WARN: 1  |  ERROR/MISSING: 0
+
+  Ingestion summary saved → D:\bluestocls\mutual_fund_analysis\data\processed\ingestion_summary.csv
+
+══════════════════════════════════════════════════════════════════════
+  PROJECT STRUCTURE VALIDATION
+══════════════════════════════════════════════════════════════════════
+  ✅  data\raw
+  ✅  data\processed
+  ✅  data\db
+  ✅  notebooks
+  ✅  scripts
+  ✅  sql
+  ✅  dashboard
+  ✅  reports
+  ✅  requirements.txt
+  ✅  README.md
+  ✅  .gitignore
+
+  Structure check : PASSED
+
+══════════════════════════════════════════════════════════════════════
+  DAY 1 CHECKLIST
+══════════════════════════════════════════════════════════════════════
+  ✅  Project structure validated
+  ✅  All 10 CSVs loaded and profiled
+  ✅  Ingestion summary generated
+  ✅  Live NAV fetched (mfapi.in)
+  ✅  AMFI codes validated
+  ✅  Day 1 quality report generated
+
+  Report saved → D:\bluestocls\mutual_fund_analysis\reports\day1_quality_report.txt
+======================================================================
