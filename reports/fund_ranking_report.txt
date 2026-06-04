@@ -1,0 +1,128 @@
+==================================================================================================================================
+  BLUESTOCK FUND RANKING — COMPOSITE WEIGHTED SCORE
+  Weights: Return=30%  Sharpe=25%  Alpha=20%  Expense=15%  Drawdown=10%
+==================================================================================================================================
+Rank  Scheme                                          Cat         Plan       3YRet   Sharpe   Alpha   Exp%      MDD    Score   RRnk   SRnk   ARnk   ERnk   DRnk
+----------------------------------------------------------------------------------------------------------------------------------
+   1  Kotak Flexicap Fund - Regular - Growth          Flexi Cap   Regular    15.65   1.3068    1.85   1.45   -12.97   0.7600  0.750  0.975  0.938  0.475  0.325
+   2  SBI Small Cap Fund - Regular Plan - Growth      Small Cap   Regular    23.39   0.9453    1.23   1.43   -28.71   0.7387  1.000  0.675  0.525  0.500  0.900
+   3  ICICI Pru Midcap Fund - Regular - Growth        Mid Cap     Regular    18.08   1.1801    0.89   1.36   -18.19   0.6900  0.825  0.900  0.287  0.650  0.625
+   4  ABSL Small Cap Fund - Regular - Growth          Small Cap   Regular    22.38   0.1627    1.84   1.53   -35.45   0.6881  0.950  0.325  0.900  0.312  0.950
+   5  SBI Small Cap Fund - Direct Plan - Growth       Small Cap   Direct     23.14  -0.0572    1.13   0.72   -52.57   0.6744  0.975  0.225  0.463  0.887  1.000
+   6  Axis Midcap Fund - Regular - Growth             Mid Cap     Regular    15.18   0.9982    1.42   1.38   -20.96   0.6675  0.650  0.750  0.625  0.600  0.700
+   7  Mirae Asset Large Cap Fund - Regular - Growth   Large Cap   Regular    14.81   1.4483    1.62   1.46   -11.27   0.6625  0.600  1.000  0.725  0.450  0.200
+   8  HDFC Mid-Cap Opportunities Fund - Regular - Gr  Mid Cap     Regular    16.58   1.0937    0.95   1.38   -16.22   0.6600  0.775  0.850  0.375  0.600  0.500
+   9  Kotak Emerging Equity Fund - Regular - Growth   Mid Cap     Regular    18.23   0.0760    1.91   1.56   -24.00   0.6313  0.850  0.275  0.975  0.200  0.825
+  10  DSP Small Cap Fund - Regular - Growth           Small Cap   Regular    20.08   0.9498    0.69   1.52   -31.17   0.6094  0.875  0.700  0.125  0.362  0.925
+  11  DSP Midcap Fund - Regular - Growth              Mid Cap     Regular    17.16   1.1321    1.02   1.61   -17.25   0.6050  0.800  0.875  0.400  0.075  0.550
+  12  Mirae Asset Emerging Bluechip Fund - Regular -  Large & Mid Cap  Regular    14.56   0.9263    1.70   1.52   -15.27   0.5819  0.550  0.650  0.762  0.362  0.475
+  13  Nippon India Large Cap Fund - Direct - Growth   Large Cap   Direct     12.33   0.6452    1.70   0.72   -18.63   0.5806  0.350  0.500  0.762  0.887  0.650
+  14  UTI Flexi Cap Fund - Regular - Growth           Flexi Cap   Regular    15.34   0.6195    1.79   1.64   -21.54   0.5744  0.700  0.475  0.825  0.037  0.750
+  15  SBI Bluechip Fund - Direct Plan - Growth        Large Cap   Direct     11.30   0.9533    1.78   0.66   -11.80   0.5600  0.175  0.725  0.800  0.925  0.275
+  16  HDFC Mid-Cap Opportunities Fund - Direct - Gro  Mid Cap     Direct     15.29   0.3006    0.90   0.78   -21.12   0.5438  0.675  0.350  0.325  0.775  0.725
+  17  ICICI Pru Bluechip Fund - Direct - Growth       Large Cap   Direct     14.41   1.0265    0.88   0.80   -12.59   0.5400  0.525  0.775  0.250  0.725  0.300
+  18  Nippon India Small Cap Fund - Regular - Growth  Small Cap   Regular    20.15   0.4484    0.80   1.53   -23.34   0.5256  0.900  0.375  0.175  0.312  0.800
+  19  Axis Small Cap Fund - Regular - Growth          Small Cap   Regular    20.98  -0.0760    0.51   1.38   -51.68   0.5200  0.925  0.200  0.025  0.600  0.975
+  20  Nippon India Large Cap Fund - Regular - Growth  Large Cap   Regular    14.00   1.0817    0.86   1.51   -17.41   0.5156  0.500  0.825  0.200  0.412  0.575
+  21  HDFC Top 100 Fund - Direct Plan - Growth        Large Cap   Direct     13.38   0.7758    1.13   0.92   -15.20   0.5100  0.425  0.575  0.463  0.675  0.450
+  22  Nippon India ETF Nifty 50 BeES                  Index/ETF   Direct     11.77   0.6649    1.80   0.89   -11.65   0.5050  0.225  0.550  0.850  0.700  0.250
+  23  ABSL Frontline Equity Fund - Regular - Growth   Large Cap   Regular    13.78   1.0272    1.34   1.60   -11.29   0.4969  0.475  0.800  0.575  0.113  0.225
+  24  Axis Bluechip Fund - Direct - Growth            Large Cap   Direct     12.14   0.1296    1.43   0.75   -21.75   0.4962  0.300  0.300  0.650  0.825  0.775
+  25  UTI Mid Cap Fund - Regular - Growth             Mid Cap     Regular    15.61  -0.2058    1.12   1.51   -28.00   0.4831  0.725  0.125  0.425  0.412  0.875
+  26  ICICI Pru Liquid Fund - Regular - Growth        Liquid      Regular     7.68   0.4950    1.85   0.74    -0.10   0.4750  0.150  0.450  0.938  0.850  0.025
+  27  DSP Top 100 Equity Fund - Regular - Growth      Large Cap   Regular    12.82   0.4641    1.82   1.54   -14.84   0.4744  0.400  0.400  0.875  0.263  0.400
+  28  SBI Bluechip Fund - Regular Plan - Growth       Large Cap   Regular    12.36   1.2082    0.87   1.54   -15.01   0.4706  0.375  0.925  0.225  0.263  0.425
+  29  ICICI Pru Value Discovery Fund - Regular - Gro  Value       Regular    14.76   0.6489    0.55   1.41   -19.83   0.4688  0.575  0.525  0.075  0.550  0.675
+  30  Mirae Asset Tax Saver Fund - Regular - Growth   ELSS        Regular    13.58   1.2349    0.54   1.60   -16.40   0.4519  0.450  0.950  0.050  0.113  0.525
+  31  HDFC Short Term Debt Fund - Regular - Growth    Short Duration  Regular     7.37  -0.5670    1.98   0.56    -4.31   0.4062  0.125  0.050  1.000  0.975  0.100
+  32  Kotak Bluechip Fund - Regular - Growth          Large Cap   Regular    12.25   0.4943    1.27   1.59   -17.57   0.3962  0.325  0.425  0.550  0.150  0.600
+  33  HDFC Top 100 Fund - Regular Plan - Growth       Large Cap   Regular    14.84  -0.2015    0.78   1.55   -24.73   0.3738  0.625  0.150  0.150  0.225  0.850
+  34  Kotak Liquid Fund - Regular - Growth            Liquid      Regular     6.18  -0.0895    1.52   0.60    -0.12   0.3562  0.100  0.175  0.675  0.950  0.050
+  35  UTI Nifty 50 Index Fund - Regular - Growth      Index       Regular    12.10   0.8171    0.93   1.57   -10.86   0.3525  0.275  0.625  0.350  0.175  0.175
+  36  ICICI Pru Bluechip Fund - Regular - Growth      Large Cap   Regular    11.54   0.7980    0.66   1.42   -13.90   0.3437  0.200  0.600  0.100  0.525  0.350
+  37  SBI Magnum Gilt Fund - Regular Plan - Growth    Gilt        Regular     6.07  -0.2267    1.60   0.77    -4.33   0.3200  0.075  0.100  0.700  0.800  0.125
+  38  Axis Bluechip Fund - Regular - Growth           Large Cap   Regular    11.84   0.0308    1.41   1.64   -14.40   0.3006  0.250  0.250  0.600  0.037  0.375
+  39  Nippon India Gilt Securities Fund - Regular -   Gilt        Regular     5.31  -0.3567    0.89   0.55    -8.32   0.2562  0.050  0.075  0.287  1.000  0.150
+  40  ABSL Liquid Fund - Regular - Growth             Liquid      Regular     5.14  -0.8154    1.18   0.79    -0.16   0.2338  0.025  0.025  0.500  0.750  0.075
+==================================================================================================================================
+
+================================================================================
+  SUMMARY — TOP 10 & BOTTOM 5
+================================================================================
+
+  TOP 10 FUNDS (Best composite score):
+  Rank   Scheme                                              Category        Score
+  --------------------------------------------------------------------------------
+  1      Kotak Flexicap Fund - Regular - Growth              Flexi Cap      0.7600
+  2      SBI Small Cap Fund - Regular Plan - Growth          Small Cap      0.7387
+  3      ICICI Pru Midcap Fund - Regular - Growth            Mid Cap        0.6900
+  4      ABSL Small Cap Fund - Regular - Growth              Small Cap      0.6881
+  5      SBI Small Cap Fund - Direct Plan - Growth           Small Cap      0.6744
+  6      Axis Midcap Fund - Regular - Growth                 Mid Cap        0.6675
+  7      Mirae Asset Large Cap Fund - Regular - Growth       Large Cap      0.6625
+  8      HDFC Mid-Cap Opportunities Fund - Regular - Growth  Mid Cap        0.6600
+  9      Kotak Emerging Equity Fund - Regular - Growth       Mid Cap        0.6313
+  10     DSP Small Cap Fund - Regular - Growth               Small Cap      0.6094
+
+  BOTTOM 5 FUNDS (Lowest composite score):
+  Rank   Scheme                                              Category        Score
+  --------------------------------------------------------------------------------
+  36     ICICI Pru Bluechip Fund - Regular - Growth          Large Cap      0.3437
+  37     SBI Magnum Gilt Fund - Regular Plan - Growth        Gilt           0.3200
+  38     Axis Bluechip Fund - Regular - Growth               Large Cap      0.3006
+  39     Nippon India Gilt Securities Fund - Regular - Grow  Gilt           0.2562
+  40     ABSL Liquid Fund - Regular - Growth                 Liquid         0.2338
+
+================================================================================
+  CATEGORY AVERAGES (composite score)
+================================================================================
+  Category              Count     Mean      Min      Max
+  -------------------------------------------------------
+  Flexi Cap                 2   0.6672   0.5744   0.7600  ####################
+  Small Cap                 6   0.6260   0.5200   0.7387  ##################
+  Mid Cap                   7   0.6115   0.4831   0.6900  ##################
+  Large & Mid Cap           1   0.5819   0.5819   0.5819  #################
+  Index/ETF                 1   0.5050   0.5050   0.5050  ###############
+  Large Cap                14   0.4801   0.3006   0.6625  ##############
+  Value                     1   0.4688   0.4688   0.4688  ##############
+  ELSS                      1   0.4519   0.4519   0.4519  #############
+  Short Duration            1   0.4062   0.4062   0.4062  ############
+  Liquid                    3   0.3550   0.2338   0.4750  ##########
+  Index                     1   0.3525   0.3525   0.3525  ##########
+  Gilt                      2   0.2881   0.2562   0.3200  ########
+
+================================================================================
+  PLAN COMPARISON (Regular vs Direct)
+================================================================================
+  Direct      avg score = 0.5513    n = 8
+  Regular     avg score = 0.5028    n = 32
+
+================================================================================
+  WEIGHT CONTRIBUTION ANALYSIS (top 10 schemes)
+================================================================================
+  Scheme                                            Ret    Shp    Alp    Exp     DD    Total
+  -------------------------------------------------------------------------------------
+  Kotak Flexicap Fund - Regular - Growth          0.225  0.244  0.188  0.071  0.033   0.7600
+  SBI Small Cap Fund - Regular Plan - Growth      0.300  0.169  0.105  0.075  0.090   0.7387
+  ICICI Pru Midcap Fund - Regular - Growth        0.247  0.225  0.058  0.098  0.062   0.6900
+  ABSL Small Cap Fund - Regular - Growth          0.285  0.081  0.180  0.047  0.095   0.6881
+  SBI Small Cap Fund - Direct Plan - Growth       0.292  0.056  0.092  0.133  0.100   0.6744
+  Axis Midcap Fund - Regular - Growth             0.195  0.188  0.125  0.090  0.070   0.6675
+  Mirae Asset Large Cap Fund - Regular - Growth   0.180  0.250  0.145  0.068  0.020   0.6625
+  HDFC Mid-Cap Opportunities Fund - Regular - Gr  0.233  0.212  0.075  0.090  0.050   0.6600
+  Kotak Emerging Equity Fund - Regular - Growth   0.255  0.069  0.195  0.030  0.083   0.6313
+  DSP Small Cap Fund - Regular - Growth           0.263  0.175  0.025  0.054  0.092   0.6094
+
+======================================================================
+  FORMULA PROOF — #1  Kotak Flexicap Fund - Regular - Growth
+======================================================================
+  Metric           Raw Value    Rank       Weight   Contribution
+  -----------------------------------------------------------------
+  3-Year Return       15.65%   0.7500    × 0.30  =  0.2250
+  Sharpe Ratio       1.3068    0.9750    × 0.25  =  0.2437
+  Alpha              1.8500    0.9375    × 0.20  =  0.1875
+  Expense Ratio        1.45%   0.4750    × 0.15  =  0.0712  (inverted — lower=better)
+  Max Drawdown       -12.97%   0.3250    × 0.10  =  0.0325  (inverted — less negative=better)
+  -----------------------------------------------------------------
+  Composite Score                                 =  0.7600
+======================================================================
